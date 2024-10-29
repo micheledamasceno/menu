@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+    padding: 10px 20px;
+    position: fixed; /* Fixa o menu no topo */
+    top: 0;          /* Define que deve ficar no topo */
+    width: 100%;     /* Ocupa toda a largura da tela */
+    z-index: 1000;   /* Garante que fique acima de outros elementos */
+}
+
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #f0a500;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 3px 0;
+    
+
+    
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #333;
+        width: 100%;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+
+.conteiner1{
+    background-color: rgb(184, 116, 28);
+    padding: 10%;
+    text-align: center;
+}
+.conteiner2{
+    background-color: antiquewhite;
+    padding: 15%;
+    text-align: center;
+}
+
+.conteiner3{
+    background-color: rgb(190, 223, 45);
+    padding: 15%;
+    text-align: center;
+}
+.conteiner4{
+    background-color: rgb(19, 192, 149);
+    padding: 15%;
+    text-align: center;
+}
+
